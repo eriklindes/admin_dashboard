@@ -1,5 +1,69 @@
-input {
-    float: right;
-    padding: 6px;
-    border: none;
+:root {
+    --gray-1: #fafaf9;
+    --gray-2: #e7e5e4;
+    --gray-3: #292524;
+    --gray-4: #1c1917;
+    --gray-m: #78716c;
+    --primary: #084c61;
+    --accent: #fa3a6d;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+    --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+    --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+    --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
 }
+
+html {
+    box-sizing: border-box;
+    color: var(--gray-4);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input {
+    color: inherit;
+    font: inherit;
+}
+
+button {
+    border: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+}
+
+body {
+    color: var(--gray-3);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content";
+}
+
+/* HEADER  */
+
+.header {
+    background-color: white;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2.5rem;
+}
+
+
+
+siderbar
